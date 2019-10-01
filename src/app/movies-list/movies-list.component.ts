@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { url } from 'inspector';
+
+
 
 @Component({
   selector: 'app-movies-list',
@@ -7,7 +8,9 @@ import { url } from 'inspector';
   styleUrls: ['./movies-list.component.css']
 })
 export class MoviesListComponent implements OnInit {
+  modeView = 'grid';
   public movies: Movie[] = [
+    
     {
       title: "Avangers",
       description: "",
@@ -34,6 +37,9 @@ export class MoviesListComponent implements OnInit {
   }
   removeFromCart(i:number) {
     this.cart.splice(i, 1);
+  }
+  onChangeView(mode) {
+    this.modeView = mode;
   }
 }
 

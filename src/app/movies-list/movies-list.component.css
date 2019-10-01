@@ -8,13 +8,16 @@
     padding-bottom: 35px;
     background-color: #f2f2f2;
 }
-.container {
+.grid {
     display: flex;
     background-color: black;
 }
 .list {
-    padding: 10px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+  }
 .image {
     background-color: #f2f2f2;
     width: 100%;
