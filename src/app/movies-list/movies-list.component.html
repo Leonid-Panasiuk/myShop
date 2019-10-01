@@ -1,0 +1,26 @@
+<h1 class="text">Movie List</h1>
+
+
+<div class="container">
+        
+    <div class="list" *ngFor="let movie of movies" (click)="addToCart(movie)">{{ movie.title }} {{movie.description }}
+        <img class="image" [src]="movie.img">
+    </div>
+    </div>
+
+
+
+
+
+
+<h1>Cart :</h1>
+
+<ul>
+    <li *ngFor="let movie of cart; let i = index"(click)= "removeFromCart(i)">{{ movie.title }}
+    <button class="btn" >Delete From Cart</button></li>
+</ul>
+
+
+
+
+
