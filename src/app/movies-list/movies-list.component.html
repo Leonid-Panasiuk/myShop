@@ -1,21 +1,17 @@
 <h1 class="text">Movie List</h1>
 
-  
-<button type="button"  (click)="onChangeView('grid')">Grid</button>
-<button type="button" (click)="onChangeView('list')">List</button>
-
+  <div class="two-btn">
+<button type="button" class="btn btn-dark btn-lg"  (click)="onChangeView('grid')">Grid</button>
+<button type="button" class="btn btn-dark btn-lg" (click)="onChangeView('list')">List</button>
+</div>
 <div class="grid">
         
     
         <div [ngClass]="modeView"> 
-    <div class="list" *ngFor="let movie of movies" (click)="addToCart(movie)">{{ movie.title }} {{movie.description }}
+    <div class="list" *ngFor="let movie of movies" (click)="addToCart(movie)">
         <img class="image" [src]="movie.img">
-        
-       
-        
-
-        
-        
+        <div class="mov">{{ movie.title}}</div>
+        <p>{{ description }}</p>
         </div>
     </div>
     </div>
@@ -27,7 +23,7 @@
 
 
 
-<ul><h1>Cart :</h1>
+<ul><h1 class="cart">Cart :</h1>
     <li *ngFor="let movie of cart; let i = index"(click)= "removeFromCart(i)">{{ movie.title }}
     <button class="btn" >Delete From Cart</button></li>
 </ul>

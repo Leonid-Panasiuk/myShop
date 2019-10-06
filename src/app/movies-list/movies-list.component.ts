@@ -19,7 +19,7 @@ export class MoviesListComponent implements OnInit {
     {
       title: "Spiderman",
       description: "",
-      img: "https://www.wallpapermaiden.com/wallpaper/19961/download/1920x1080/avengers-infinity-war-spider-man.jpg"
+      img: "https://i.pinimg.com/originals/2b/79/dc/2b79dca67e85e555f6a544242eeb0aa0.jpg"
     },
     {
       title: "Deadpool",
